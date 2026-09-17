@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.5a1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-16 08:53+0000\n"
-"PO-Revision-Date: 2026-09-16 08:53+0000\n"
+"POT-Creation-Date: 2026-09-17 11:31+0000\n"
+"PO-Revision-Date: 2026-09-17 11:31+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -53,8 +53,18 @@ msgid "Bank and Cash"
 msgstr ""
 
 #. module: om_account_accountant
+#: model:ir.ui.menu,name:om_account_accountant.menu_accounting_statement_cash
+msgid "Cash Statements"
+msgstr ""
+
+#. module: om_account_accountant
 #: model:ir.model,name:om_account_accountant.model_res_config_settings
 msgid "Config Settings"
+msgstr ""
+
+#. module: om_account_accountant
+#: model_terms:ir.actions.act_window,help:om_account_accountant.action_account_account_tag
+msgid "Create an account tag"
 msgstr ""
 
 #. module: om_account_accountant
@@ -80,8 +90,18 @@ msgid "Journals"
 msgstr ""
 
 #. module: om_account_accountant
+#: model:ir.ui.menu,name:om_account_accountant.menu_account_management_config
+msgid "Management"
+msgstr ""
+
+#. module: om_account_accountant
 #: model:ir.ui.menu,name:om_account_accountant.menu_action_account_moves_journal_misc
 msgid "Miscellaneous"
+msgstr ""
+
+#. module: om_account_accountant
+#: model_terms:ir.actions.act_window,help:om_account_accountant.action_account_payment_method
+msgid "No payment method"
 msgstr ""
 
 #. module: om_account_accountant
@@ -148,13 +168,17 @@ msgid "Sales"
 msgstr ""
 
 #. module: om_account_accountant
-#: model:ir.ui.menu,name:om_account_accountant.menu_accounting_statement_cash
-msgid "Statements"
+#: model_terms:ir.actions.act_window,help:om_account_accountant.action_account_account_tag
+msgid ""
+"Tags group accounts or tax lines in the reports, such as the cash flow "
+"statement or the tax grids."
 msgstr ""
 
 #. module: om_account_accountant
-#: model:ir.ui.menu,name:om_account_accountant.menu_account_templates
-msgid "Templates"
+#: model_terms:ir.actions.act_window,help:om_account_accountant.action_account_payment_method
+msgid ""
+"The payment methods, such as manual or cheque, that the journals offer for "
+"incoming and outgoing payments."
 msgstr ""
 
 #. module: om_account_accountant
