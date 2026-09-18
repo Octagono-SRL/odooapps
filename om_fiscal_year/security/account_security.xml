@@ -3,7 +3,16 @@
     <data noupdate="0">
 
         <record id="group_fiscal_year" model="res.groups">
-            <field name="name">Allow to define fiscal years of more or less than a year</field>
+            <!-- Original name collided with res_groups_name_uniq (category_id,
+                 name) against some other already-loaded group with the
+                 identical text under this same base.module_category_hidden
+                 category on a real OpenUpgrade 14.0->15.0 run — real source
+                 not identified after an exhaustive search (no other module
+                 in this repo or Odoo 15 core defines this exact string
+                 anywhere). Purely an internal admin-only permission group
+                 label, not user-facing data, so disambiguated rather than
+                 spending more time chasing the real collision. -->
+            <field name="name">Allow to define fiscal years of more or less than a year (om_fiscal_year)</field>
             <field name="category_id" ref="base.module_category_hidden"/>
             <field name="users" eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"/>
         </record>
