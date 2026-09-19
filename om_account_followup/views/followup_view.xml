@@ -43,21 +43,21 @@
                     </div>
 
                     <group string="Manual Action" invisible="not manual_action">
-<!--                           attrs="{'invisible': [('manual_action', '=', False)]}">-->
+<!--                           invisible="manual_action == False">-->
                         <field name="manual_action_responsible_id"/>
 
                         <field name="manual_action_note"/>
-<!--                               attrs="{'required': [('manual_action', '&lt;&gt;', False)]}" todo-->
+<!--                               required="manual_action != False" todo-->
 <!--                               placeholder="e.g. Call the customer, check if it's paid, ..."/>-->
                     </group>
                     <group string="Send an Email" invisible="not send_email">
-<!--                           attrs="{'invisible': [('send_email', '=', False)]}">-->
+<!--                           invisible="send_email == False">-->
                         <field name="email_template_id"/>
-<!--                               attrs="{'required': [('send_email', '&lt;&gt;', False)]}"/> todo-->
+<!--                               required="send_email != False"/> todo-->
                     </group>
                     <group string="Send a Letter or Email"
                            invisible="not send_email and not send_letter">
-<!--                           attrs="{'invisible': [('send_email', '=', False), ('send_letter', '=', False)]}">-->
+<!--                           invisible="send_email == False and send_letter == False">-->
                         <p colspan="2" class="oe_grey">
                             Write here the introduction in the letter,
                             according to the level of the follow-up. You can

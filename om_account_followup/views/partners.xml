@@ -88,17 +88,17 @@
                                     groups="account.group_account_user"
                                     help="Print overdue payments report independent of follow-up line"
                                     invisible="payment_amount_due &lt;= 0.0"/>
-<!--                                    attrs="{'invisible':[('payment_amount_due', '&lt;=', 0.0)]}"/>-->
+<!--                                    invisible="payment_amount_due &lt;= 0.0"/>-->
                             <button name="do_partner_mail" type="object"
                                     string="Send Overdue Email"
                                     groups="account.group_account_user"
                                     help="If not specified by the latest follow-up level, it will send from the default email template"
                                     invisible="payment_amount_due &lt;= 0.0"/>
-<!--                                    attrs="{'invisible':[('payment_amount_due', '&lt;=', 0.0)]}"/>-->
+<!--                                    invisible="payment_amount_due &lt;= 0.0"/>-->
                         </div>
 
                         <p invisible="not latest_followup_date">
-<!--                        <p attrs="{'invisible':[('latest_followup_date','=', False)]}">-->
+<!--                        <p invisible="latest_followup_date == False">-->
                             The
                             <field name="latest_followup_date"
                                    class="oe_inline"/>
